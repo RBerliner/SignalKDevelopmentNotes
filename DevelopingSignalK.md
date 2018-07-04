@@ -1,4 +1,4 @@
-##Developing SignalK 
+# Developing SignalK 
 
 These notes may help others to start working on SignalK themselves – there is a bit of a learning curve with servers, maven, git, github.... These instructions were prepared for Ubuntu-linux but can probably be applied to Windows with some adjustments.
 
@@ -7,7 +7,7 @@ signalk-java is the java form of the system and it is contained in 4 projects (r
 ## Install the Tools 
 
 
-*Install git.*  
+**Install git.**  
 ```
 $ sudo apt-get update  
 $ sudo apt-get install git
@@ -16,7 +16,7 @@ git version 2.7.4
 ```
 
 
-*Install maven.*  
+**Install maven.**  
 ```
 $ sudo apt-get install maven  
 $ mvn -version
@@ -28,7 +28,7 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "4.4.0-71-generic", arch: "amd64", family: "unix"  
 ```
 
-*Create the local repositories.*
+**Create the local repositories.**
 
 1. Start by creating a directory SignalK. Open the SignalK directory in the Terminal.  
 2. In any browser, go to https://github.com/SignalK  
@@ -52,7 +52,7 @@ You will now have a directory, SignalK, containing the three local repositories:
     
 Open a terminal in ~SignalK/signalk-java/signal-static. In github, find the freeboard-sk repo and clone it so that the freeboard-sk repo exists in your SignalK/signalk-java/signalk-static directory.
 
-##Building project in terminal  
+## Building project in terminal  
   
 1. Open Terminal in signalk-core-java and do a mvn install (adjusted for your directory location).  
   
@@ -100,7 +100,7 @@ To run the program from a terminal and have it continue to execute when the term
 It may be necessary to delete ```signalk-java/conf/self.json```, ```signalk-java/conf/signalk-config.json``` and 
 ```signalk-java/conf/resources.json``` **before starting**  to get a clean start.  
 
-##Debug SignalK with Eclipse  
+## Debug SignalK with Eclipse  
   
 Import projects into workspace. (File > Import)  
   
@@ -108,9 +108,9 @@ Select Maven, Existing Maven Project,
   
 Next Select the pom and Add project to working set, Finish.  
 
-##Build, Run and Debug SignalK using NetBeans  
+## Build, Run and Debug SignalK using NetBeans  
 
-*Build SignalK*
+**Build SignalK**
 
 Netbeans can be downloaded and installed following the instructions at https://netbeans.org  
 
@@ -130,13 +130,13 @@ In the case of signalk-core-java, the goal is ```install```.
 
 I have not used NetBeans to build freeboard-sk and continue to do that in a terminal using npm.
 
-*Run SignalK*
+**Run SignalK**
 
 To run the project in NetBeans, right-click on the signalk-java project and select Maven > Goals.
 
 <a href="" target="_blank"><img src="RunSignalk.png"/></a>  
 
-*Debug SignalK*
+**Debug SignalK**
 
 To debug the project using NetBeans, follow the same procedure as "Run SignalK" but click on the Add button and select Debug Maven Project. You get the following result:
 
